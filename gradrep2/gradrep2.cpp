@@ -1,6 +1,6 @@
 /*
 
-Written by Ulisse Benedetti
+Written by Ulisse "HighwayStar54" Benedetti
 
 */
 
@@ -36,8 +36,7 @@ int main(int argc, char * argv[]) {
 		"\n\n\t/R\tDraws the pixels in a red gradient."
 		"\n\t/G\tDraws the pixels in a green gradient."
 		"\n\t/B\tDraws the pixels in a blue gradient."
-		"\n\n\tFlags can be typed in any order."
-		"\n\tColor flags can be combined.\n";
+		"\n\n\tFlags can be typed in any order, color flags can be combined.\n";
 
 #pragma region
 	if(argc < 2) {
@@ -230,7 +229,7 @@ int main(int argc, char * argv[]) {
 		return -7;
 	}
 
-	auto start = std::chrono::high_resolution_clock::now(); //The drawing operation is timed.
+	auto start = std::chrono::high_resolution_clock::now(); //The drawing operation is timed starting from here.
 
 	for(int Y = 1; Y <= height; Y++) {
 		for(int X = 1; X <= width && iter < str->length(); X++) {
